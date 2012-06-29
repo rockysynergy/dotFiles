@@ -1,0 +1,42 @@
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/zencoding-vim"]
+	path = vim/bundle/zencoding-vim
+	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/vim-task"]
+	path = vim/bundle/vim-task
+	url = https://github.com/samsonw/vim-task.git
+[submodule "vim/bundle/vim-wiki"]
+	path = vim/bundle/vim-wiki
+	url = https://github.com/vim-scripts/vimwiki.git
+[submodule "vim/bundle/vim-typoscript"]
+	path = vim/bundle/vim-typoscript
+	url = https://github.com/nebelschwade/typoscript-vim.git
+[submodule "vim/bundle/html5.vim"]
+	path = vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
+[submodule "vim/bundle/solarized"]
+	path = vim/bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "vim/bundle/php.vim"]
+	path = vim/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "vim/bundle/slimux"]
+	path = vim/bundle/slimux
+	url = https://github.com/epeli/slimux.git

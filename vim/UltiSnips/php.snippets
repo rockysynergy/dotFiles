@@ -1,0 +1,32 @@
+snippet func "func"
+/**
+ * $2
+ * @param $3 ${4}
+ * @return ${5:void}
+ **/
+${1:public }function ${2:someFunc}(${3})
+{${6}
+}
+endsnippet
+
+snippet getset
+/**
+* Gets the value of ${1:}
+*
+* @return $2
+*/
+function get${1/.*/\u$0/}()
+{
+    return $this->$1;
+}
+
+/**
+* Sets the value of $1
+*
+* @param ${3:mixed} $$1 
+*/
+function set${1/.*/\u$0/}($$1)
+{
+    $this->$1 = $$1;
+}
+endsnippet
