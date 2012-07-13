@@ -1,7 +1,7 @@
 "=========================================
 "++++++Setting imported from vimrc
 "=========================================
-source ~/.vim/vimrc
+source /home/rocky/dotFiles/vim/common-vimrc
 
 "=========================================
 "++++++Setting for gvim
