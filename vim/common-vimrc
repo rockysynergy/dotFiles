@@ -22,6 +22,7 @@ filetype indent on
 "++ Set for php omini autocomplete
 filetype plugin on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+runtime macros/matchit.vim
 syntax enable
 " " check php syntax with Ctrl + L
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>

@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/rocky/dotFiles/tmux'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc'
+let g:netrw_dirhist_2='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc/app/controllers'
+let g:netrw_dirhist_3='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc/app'
+let g:netrw_dirhist_4='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc'
+let g:netrw_dirhist_5='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc/app'
+let g:netrw_dirhist_6='/media/80242F07242EFFB0/books/PragmaticBookshelf/PraticalVim/code/files/mvc/app/controllers'
+let g:netrw_dirhist_7='/home/rocky/public_html/epcms.in/Controllers'
+let g:netrw_dirhist_8='/home/rocky/public_html/epcms.in'

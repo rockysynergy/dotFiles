@@ -44,6 +44,8 @@ export PS1='<\u@\h:\w>\n=> '
 
 export CDPATH=.:~:/etc:~/public_html
 
+export PATH=$PATH:/home/rocky/bin/Snapshot
+
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."

@@ -23,3 +23,15 @@ command W call WriteCreatingDirs()
 
 "============= Yank Current file path to buffer =============
 :nmap cp :let @" = expand("%:p")
+
+"=========================================
+" Include exrc
+source ~/.exrc
+"============ Show php documentation =====
+set keywordprg=pman
+"=====Expand Active File Directory========
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+"=====Expand Active File Directory========
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+"=====Enable matchit========
+source $VIMRUNTIME/macros/matchit.vim
