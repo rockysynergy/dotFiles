@@ -9,7 +9,7 @@ ${1:public }function ${2:someFunc}(${3})
 }
 endsnippet
 
-snippet getset
+snippet getSet
 /**
 * Gets the value of ${1:}
 *
@@ -26,6 +26,28 @@ function get${1/.*/\u$0/}()
 * @param ${3:mixed} $$1 
 */
 function set${1/.*/\u$0/}($$1)
+{
+    $this->$1 = $$1;
+}
+endsnippet
+
+snippet get_set
+/**
+* Gets the value of $1
+*
+* @return $2
+*/
+function get_$1()
+{
+    return $this->$1;
+}
+
+/**
+* Sets the value of $1
+*
+* @param ${3:mixed} $$1 
+*/
+function set_$1($$1)
 {
     $this->$1 = $$1;
 }

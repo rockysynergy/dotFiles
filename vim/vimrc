@@ -34,4 +34,4 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 "=====Expand Active File Directory========
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "=====Enable matchit========
-source $VIMRUNTIME/macros/matchit.vim
+"runtime /home/rocky/dotFiles/vim/bundle/vim-matchit/plugin/matchit.vim

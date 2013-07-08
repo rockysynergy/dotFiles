@@ -46,3 +46,6 @@
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/hardmode"]
+	path = vim/bundle/hardmode
+	url = https://github.com/wikitopian/hardmode.git

@@ -34,7 +34,7 @@ complete -cf man
 export MAN_POSIXLY_CORRECT=1
 # For edit command using vim
 export EDITOR=vim
-#set -o vi
+set -o vi
 
 # Set up editor for fc command
 export FCEDIT="/usr/local/bin/vim"

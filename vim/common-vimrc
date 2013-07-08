@@ -1,6 +1,12 @@
 "+++ Call pathogen need to be at top
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+"++ Place here so the matchit plugin will work
+source /home/rocky/dotFiles/vim/bundle/ultisnips/plugin/UltiSnips.vim
+set nocompatible
+filetype plugin on
+syntax on
+filetype detect
 "++ Syntax highlighting for typoscript
 autocmd BufNewFile,BufRead *.ts setfiletype typoscript
 "+++ Tab key produces 4 spaces, and tab characters are converted to spaces
@@ -16,14 +22,11 @@ set incsearch
 set nopaste
 set autoindent
 set fileformats=unix,dos
-set nocompatible
-filetype on
 filetype indent on 
 "++ Set for php omini autocomplete
-filetype plugin on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-runtime macros/matchit.vim
 syntax enable
+syntax on
 " " check php syntax with Ctrl + L
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 "++Insert date
@@ -73,3 +76,24 @@ command! -nargs=* Wrap set wrap linebreak nolist
 " Set status line
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
+
+" Configuration for vim hardmode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+" Create shortcut to mute search highlight
+"nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" Visual mode use * and # to search selection
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+function! s:VSetSearch()
+    let temp = @s
+    norm! gv"sy
+    let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+    let @s = temp
+endfunction
+
+" Fixing & command
+nnoremap & :&&<CR>
+xnoremap & ::<CR>
