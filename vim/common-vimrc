@@ -16,6 +16,10 @@ set expandtab
 set background=dark
 set number
 highlight PmenuSel ctermfg=7
+"+++ Indention for jade and SASSS SCSS file
+autocmd FileType jade setlocal shiftwidth=2 tabstop=2
+autocmd FileType sass setlocal shiftwidth=2 tabstop=2
+autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 "+++ when you start searching text with /, search is performed at every new
 " character insertion
 set incsearch
@@ -27,8 +31,11 @@ filetype indent on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 syntax enable
 syntax on
-" " check php syntax with Ctrl + L
+" " check syntax with Ctrl + L
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
+autocmd FileType javascript noremap <C-L> :!/usr/bin/jslint %<CR>
+autocmd FileType sass noremap <C-L> :!/usr/bin/csslint %<CR>
+autocmd FileType scss noremap <C-L> :!/usr/bin/csslint %<CR>
 "++Insert date
 iab <expr> ddate strftime("%Y-%m-%d")
 "++ Cap for Command-T
