@@ -19,12 +19,6 @@
 [submodule "vim/bundle/vim-typoscript"]
 	path = vim/bundle/vim-typoscript
 	url = https://github.com/nebelschwade/typoscript-vim.git
-[submodule "vim/bundle/vim-wiki"]
-	path = vim/bundle/vim-wiki
-	url = https://github.com/vim-scripts/vimwiki.git
-[submodule "vim/bundle/vim-task"]
-	path = vim/bundle/vim-task
-	url = https://github.com/samsonw/vim-task.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
